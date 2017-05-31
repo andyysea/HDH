@@ -30,6 +30,7 @@
 		7EFBBB701EDE9881004299F9 /* UIColor+YHAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB6F1EDE9881004299F9 /* UIColor+YHAddition.m */; };
 		7EFBBB731EDE9E4A004299F9 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB721EDE9E4A004299F9 /* UIView+Common.m */; };
 		91D1D8EC7C2AD7CB29657393 /* libPods-HaiDeHui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEA0BEDDE5C9A970B099DC /* libPods-HaiDeHui.a */; };
+		EAAEDA671EDF1A4200C46E9D /* NSAttributedString+YHAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAEDA661EDF1A4200C46E9D /* NSAttributedString+YHAddition.m */; };
 		ED46D8B84C94BDF7CD4790D8 /* libPods-HaiDeHuiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F4C2C6C7BA42FDB3CE0037 /* libPods-HaiDeHuiUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,8 @@
 		8FB31164CAC883E98C5F870C /* Pods-HaiDeHuiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHuiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHuiTests/Pods-HaiDeHuiTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CDEA0BEDDE5C9A970B099DC /* libPods-HaiDeHui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaiDeHui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C7301CC308B01444B7257F /* libPods-HaiDeHuiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaiDeHuiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAEDA651EDF1A4200C46E9D /* NSAttributedString+YHAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YHAddition.h"; sourceTree = "<group>"; };
+		EAAEDA661EDF1A4200C46E9D /* NSAttributedString+YHAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YHAddition.m"; sourceTree = "<group>"; };
 		EB8D38566C9B915D4583E811 /* Pods-HaiDeHuiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHuiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHuiTests/Pods-HaiDeHuiTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -307,6 +310,8 @@
 			isa = PBXGroup;
 			children = (
 				7EFBBB6A1EDE97B1004299F9 /* HDCategoryHeader.h */,
+				EAAEDA651EDF1A4200C46E9D /* NSAttributedString+YHAddition.h */,
+				EAAEDA661EDF1A4200C46E9D /* NSAttributedString+YHAddition.m */,
 				7EFBBB711EDE9E4A004299F9 /* UIView+Common.h */,
 				7EFBBB721EDE9E4A004299F9 /* UIView+Common.m */,
 				7EFBBB6E1EDE9881004299F9 /* UIColor+YHAddition.h */,
@@ -511,7 +516,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4B69B4F5D9E7A7ADFB0301F6 /* [CP] Embed Pods Frameworks */ = {
@@ -556,7 +561,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A98C728255D4B71FC1F1CFCD /* [CP] Embed Pods Frameworks */ = {
@@ -586,7 +591,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D183B49B6F459E5401AA226E /* [CP] Copy Pods Resources */ = {
@@ -615,6 +620,7 @@
 				7EFBBB621EDE73C7004299F9 /* TestViewController.m in Sources */,
 				7EFBBB401EDE6104004299F9 /* RequestManager.m in Sources */,
 				7EFBBB491EDE61EB004299F9 /* HDNavigationController.m in Sources */,
+				EAAEDA671EDF1A4200C46E9D /* NSAttributedString+YHAddition.m in Sources */,
 				7EFBBB701EDE9881004299F9 /* UIColor+YHAddition.m in Sources */,
 				7EFBBB461EDE61BC004299F9 /* HDTabBarController.m in Sources */,
 				7EFBBB4C1EDE6216004299F9 /* HDBaseViewController.m in Sources */,
@@ -861,6 +867,7 @@
 				7EFBBB2B1EDE5069004299F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EFBBB2C1EDE5069004299F9 /* Build configuration list for PBXNativeTarget "HaiDeHuiTests" */ = {
 			isa = XCConfigurationList;
@@ -869,6 +876,7 @@
 				7EFBBB2E1EDE5069004299F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EFBBB2F1EDE5069004299F9 /* Build configuration list for PBXNativeTarget "HaiDeHuiUITests" */ = {
 			isa = XCConfigurationList;
@@ -877,6 +885,7 @@
 				7EFBBB311EDE5069004299F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

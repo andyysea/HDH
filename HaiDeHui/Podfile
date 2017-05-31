@@ -35,3 +35,15 @@ end
 # SDCycleScrollView (1.65)
 # YYModel (1.0.4)
 # Masonry (1.0.2)
+
+Using AFNetworking (3.1.0)
+Using MBProgressHUD (1.0.0)
+Using MJRefresh (3.1.12)
+Using MKNetworkKit (0.87)
+Using Masonry (1.0.2)
+Using ProgressHUD (2.4)
+Using Reachability (3.1.1)
+Using SDCycleScrollView (1.65)
+Using SDWebImage (3.8.2)
+Using YYModel (1.0.4)
+
