@@ -1,0 +1,37 @@
+platform :ios, '8.0'
+
+target 'HaiDeHui' do
+
+pod 'AFNetworking'
+pod 'MKNetworkKit'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'ProgressHUD'
+pod 'MJRefresh'
+pod 'SDCycleScrollView'
+pod 'YYModel'
+pod 'Masonry'
+
+
+  target 'HaiDeHuiTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'HaiDeHuiUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+# AFNetworking (3.1.0)
+# MKNetworkKit (0.87)
+# Reachability (3.1.1)
+# SDWebImage (3.8.2)
+# MBProgressHUD (1.0.0)
+# ProgressHUD (2.4)
+# MJRefresh (3.1.12)
+# SDCycleScrollView (1.65)
+# YYModel (1.0.4)
+# Masonry (1.0.2)

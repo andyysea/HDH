@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3823BEDF33FF8B058A369140 /* libPods-HaiDeHuiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C7301CC308B01444B7257F /* libPods-HaiDeHuiTests.a */; };
+		7EFBBB011EDE5069004299F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB001EDE5069004299F9 /* main.m */; };
+		7EFBBB0C1EDE5069004299F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFBBB0B1EDE5069004299F9 /* Assets.xcassets */; };
+		7EFBBB0F1EDE5069004299F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFBBB0D1EDE5069004299F9 /* LaunchScreen.storyboard */; };
+		7EFBBB1A1EDE5069004299F9 /* HaiDeHuiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB191EDE5069004299F9 /* HaiDeHuiTests.m */; };
+		7EFBBB251EDE5069004299F9 /* HaiDeHuiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB241EDE5069004299F9 /* HaiDeHuiUITests.m */; };
+		7EFBBB3D1EDE539E004299F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB3C1EDE539E004299F9 /* AppDelegate.m */; };
+		7EFBBB401EDE6104004299F9 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB3F1EDE6104004299F9 /* RequestManager.m */; };
+		7EFBBB431EDE6173004299F9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB421EDE6173004299F9 /* Utils.m */; };
+		7EFBBB461EDE61BC004299F9 /* HDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB451EDE61BC004299F9 /* HDTabBarController.m */; };
+		7EFBBB491EDE61EB004299F9 /* HDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB481EDE61EB004299F9 /* HDNavigationController.m */; };
+		7EFBBB4C1EDE6216004299F9 /* HDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB4B1EDE6216004299F9 /* HDBaseViewController.m */; };
+		7EFBBB4F1EDE62FB004299F9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB4E1EDE62FB004299F9 /* LoginViewController.m */; };
+		7EFBBB521EDE6308004299F9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB511EDE6308004299F9 /* HomeViewController.m */; };
+		7EFBBB551EDE6367004299F9 /* HouseSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB541EDE6367004299F9 /* HouseSourceViewController.m */; };
+		7EFBBB581EDE637B004299F9 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB571EDE637B004299F9 /* DiscoverViewController.m */; };
+		7EFBBB5E1EDE63BE004299F9 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB5D1EDE63BE004299F9 /* MyViewController.m */; };
+		7EFBBB621EDE73C7004299F9 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB611EDE73C7004299F9 /* TestViewController.m */; };
+		7EFBBB661EDE976C004299F9 /* NSArray+YHLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB651EDE976C004299F9 /* NSArray+YHLog.m */; };
+		7EFBBB691EDE977C004299F9 /* NSObject+YHRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB681EDE977C004299F9 /* NSObject+YHRunTime.m */; };
+		7EFBBB701EDE9881004299F9 /* UIColor+YHAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB6F1EDE9881004299F9 /* UIColor+YHAddition.m */; };
+		7EFBBB731EDE9E4A004299F9 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB721EDE9E4A004299F9 /* UIView+Common.m */; };
+		91D1D8EC7C2AD7CB29657393 /* libPods-HaiDeHui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEA0BEDDE5C9A970B099DC /* libPods-HaiDeHui.a */; };
+		ED46D8B84C94BDF7CD4790D8 /* libPods-HaiDeHuiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F4C2C6C7BA42FDB3CE0037 /* libPods-HaiDeHuiUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EFBBB161EDE5069004299F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EFBBAF41EDE5069004299F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EFBBAFB1EDE5069004299F9;
+			remoteInfo = HaiDeHui;
+		};
+		7EFBBB211EDE5069004299F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EFBBAF41EDE5069004299F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EFBBAFB1EDE5069004299F9;
+			remoteInfo = HaiDeHui;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16F4C2C6C7BA42FDB3CE0037 /* libPods-HaiDeHuiUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaiDeHuiUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D17D2F0178DD92B02C5DF6 /* Pods-HaiDeHui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHui.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHui/Pods-HaiDeHui.release.xcconfig"; sourceTree = "<group>"; };
+		7EFBBAFC1EDE5069004299F9 /* HaiDeHui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaiDeHui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFBBB001EDE5069004299F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EFBBB0B1EDE5069004299F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EFBBB0E1EDE5069004299F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EFBBB101EDE5069004299F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EFBBB151EDE5069004299F9 /* HaiDeHuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaiDeHuiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFBBB191EDE5069004299F9 /* HaiDeHuiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaiDeHuiTests.m; sourceTree = "<group>"; };
+		7EFBBB1B1EDE5069004299F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EFBBB201EDE5069004299F9 /* HaiDeHuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaiDeHuiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFBBB241EDE5069004299F9 /* HaiDeHuiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaiDeHuiUITests.m; sourceTree = "<group>"; };
+		7EFBBB261EDE5069004299F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EFBBB3B1EDE539E004299F9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7EFBBB3C1EDE539E004299F9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7EFBBB3E1EDE6104004299F9 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		7EFBBB3F1EDE6104004299F9 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		7EFBBB411EDE6173004299F9 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		7EFBBB421EDE6173004299F9 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		7EFBBB441EDE61BC004299F9 /* HDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDTabBarController.h; sourceTree = "<group>"; };
+		7EFBBB451EDE61BC004299F9 /* HDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDTabBarController.m; sourceTree = "<group>"; };
+		7EFBBB471EDE61EB004299F9 /* HDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDNavigationController.h; sourceTree = "<group>"; };
+		7EFBBB481EDE61EB004299F9 /* HDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDNavigationController.m; sourceTree = "<group>"; };
+		7EFBBB4A1EDE6216004299F9 /* HDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDBaseViewController.h; sourceTree = "<group>"; };
+		7EFBBB4B1EDE6216004299F9 /* HDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDBaseViewController.m; sourceTree = "<group>"; };
+		7EFBBB4D1EDE62FB004299F9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7EFBBB4E1EDE62FB004299F9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7EFBBB501EDE6308004299F9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		7EFBBB511EDE6308004299F9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		7EFBBB531EDE6367004299F9 /* HouseSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseSourceViewController.h; sourceTree = "<group>"; };
+		7EFBBB541EDE6367004299F9 /* HouseSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseSourceViewController.m; sourceTree = "<group>"; };
+		7EFBBB561EDE637B004299F9 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		7EFBBB571EDE637B004299F9 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		7EFBBB5C1EDE63BE004299F9 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		7EFBBB5D1EDE63BE004299F9 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		7EFBBB5F1EDE6EC4004299F9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7EFBBB601EDE73C7004299F9 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		7EFBBB611EDE73C7004299F9 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		7EFBBB641EDE976C004299F9 /* NSArray+YHLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YHLog.h"; sourceTree = "<group>"; };
+		7EFBBB651EDE976C004299F9 /* NSArray+YHLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YHLog.m"; sourceTree = "<group>"; };
+		7EFBBB671EDE977C004299F9 /* NSObject+YHRunTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YHRunTime.h"; sourceTree = "<group>"; };
+		7EFBBB681EDE977C004299F9 /* NSObject+YHRunTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YHRunTime.m"; sourceTree = "<group>"; };
+		7EFBBB6A1EDE97B1004299F9 /* HDCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDCategoryHeader.h; sourceTree = "<group>"; };
+		7EFBBB6E1EDE9881004299F9 /* UIColor+YHAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YHAddition.h"; sourceTree = "<group>"; };
+		7EFBBB6F1EDE9881004299F9 /* UIColor+YHAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YHAddition.m"; sourceTree = "<group>"; };
+		7EFBBB711EDE9E4A004299F9 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		7EFBBB721EDE9E4A004299F9 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		8760119C8E00F6EBD24BCE48 /* Pods-HaiDeHuiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHuiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHuiUITests/Pods-HaiDeHuiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D5C946C9F5F6058B1C52B4F /* Pods-HaiDeHui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHui/Pods-HaiDeHui.debug.xcconfig"; sourceTree = "<group>"; };
+		8FA9FC0AF6AB3A48CE6D41F6 /* Pods-HaiDeHuiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHuiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHuiUITests/Pods-HaiDeHuiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8FB31164CAC883E98C5F870C /* Pods-HaiDeHuiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHuiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHuiTests/Pods-HaiDeHuiTests.release.xcconfig"; sourceTree = "<group>"; };
+		9CDEA0BEDDE5C9A970B099DC /* libPods-HaiDeHui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaiDeHui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C7301CC308B01444B7257F /* libPods-HaiDeHuiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaiDeHuiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8D38566C9B915D4583E811 /* Pods-HaiDeHuiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHuiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHuiTests/Pods-HaiDeHuiTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EFBBAF91EDE5069004299F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D1D8EC7C2AD7CB29657393 /* libPods-HaiDeHui.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFBBB121EDE5069004299F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3823BEDF33FF8B058A369140 /* libPods-HaiDeHuiTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFBBB1D1EDE5069004299F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED46D8B84C94BDF7CD4790D8 /* libPods-HaiDeHuiUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44E46105EB3CCE7C9D2DDE58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CDEA0BEDDE5C9A970B099DC /* libPods-HaiDeHui.a */,
+				D6C7301CC308B01444B7257F /* libPods-HaiDeHuiTests.a */,
+				16F4C2C6C7BA42FDB3CE0037 /* libPods-HaiDeHuiUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EFBBAF31EDE5069004299F9 = {
+			isa = PBXGroup;
+			children = (
+				7EFBBAFE1EDE5069004299F9 /* HaiDeHui */,
+				7EFBBB181EDE5069004299F9 /* HaiDeHuiTests */,
+				7EFBBB231EDE5069004299F9 /* HaiDeHuiUITests */,
+				7EFBBAFD1EDE5069004299F9 /* Products */,
+				9CBA5C1B4F814BF85FC857B9 /* Pods */,
+				44E46105EB3CCE7C9D2DDE58 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7EFBBAFD1EDE5069004299F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBAFC1EDE5069004299F9 /* HaiDeHui.app */,
+				7EFBBB151EDE5069004299F9 /* HaiDeHuiTests.xctest */,
+				7EFBBB201EDE5069004299F9 /* HaiDeHuiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EFBBAFE1EDE5069004299F9 /* HaiDeHui */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB3A1EDE539E004299F9 /* Main */,
+				7EFBBB321EDE539E004299F9 /* Classes */,
+				7EFBBB391EDE539E004299F9 /* Common-公共 */,
+				7EFBBAFF1EDE5069004299F9 /* Supporting Files */,
+			);
+			path = HaiDeHui;
+			sourceTree = "<group>";
+		};
+		7EFBBAFF1EDE5069004299F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB5F1EDE6EC4004299F9 /* PrefixHeader.pch */,
+				7EFBBB0B1EDE5069004299F9 /* Assets.xcassets */,
+				7EFBBB0D1EDE5069004299F9 /* LaunchScreen.storyboard */,
+				7EFBBB101EDE5069004299F9 /* Info.plist */,
+				7EFBBB001EDE5069004299F9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EFBBB181EDE5069004299F9 /* HaiDeHuiTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB191EDE5069004299F9 /* HaiDeHuiTests.m */,
+				7EFBBB1B1EDE5069004299F9 /* Info.plist */,
+			);
+			path = HaiDeHuiTests;
+			sourceTree = "<group>";
+		};
+		7EFBBB231EDE5069004299F9 /* HaiDeHuiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB241EDE5069004299F9 /* HaiDeHuiUITests.m */,
+				7EFBBB261EDE5069004299F9 /* Info.plist */,
+			);
+			path = HaiDeHuiUITests;
+			sourceTree = "<group>";
+		};
+		7EFBBB321EDE539E004299F9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB381EDE539E004299F9 /* NetWork-网络请求 */,
+				7EFBBB361EDE539E004299F9 /* LogIn-登陆相关 */,
+				7EFBBB341EDE539E004299F9 /* Home-首页 */,
+				7EFBBB351EDE539E004299F9 /* House-房源 */,
+				7EFBBB331EDE539E004299F9 /* Discover-发现 */,
+				7EFBBB371EDE539E004299F9 /* My-我的 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7EFBBB331EDE539E004299F9 /* Discover-发现 */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB561EDE637B004299F9 /* DiscoverViewController.h */,
+				7EFBBB571EDE637B004299F9 /* DiscoverViewController.m */,
+			);
+			path = "Discover-发现";
+			sourceTree = "<group>";
+		};
+		7EFBBB341EDE539E004299F9 /* Home-首页 */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB501EDE6308004299F9 /* HomeViewController.h */,
+				7EFBBB511EDE6308004299F9 /* HomeViewController.m */,
+				7EFBBB601EDE73C7004299F9 /* TestViewController.h */,
+				7EFBBB611EDE73C7004299F9 /* TestViewController.m */,
+			);
+			path = "Home-首页";
+			sourceTree = "<group>";
+		};
+		7EFBBB351EDE539E004299F9 /* House-房源 */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB531EDE6367004299F9 /* HouseSourceViewController.h */,
+				7EFBBB541EDE6367004299F9 /* HouseSourceViewController.m */,
+			);
+			path = "House-房源";
+			sourceTree = "<group>";
+		};
+		7EFBBB361EDE539E004299F9 /* LogIn-登陆相关 */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB4D1EDE62FB004299F9 /* LoginViewController.h */,
+				7EFBBB4E1EDE62FB004299F9 /* LoginViewController.m */,
+			);
+			path = "LogIn-登陆相关";
+			sourceTree = "<group>";
+		};
+		7EFBBB371EDE539E004299F9 /* My-我的 */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB5C1EDE63BE004299F9 /* MyViewController.h */,
+				7EFBBB5D1EDE63BE004299F9 /* MyViewController.m */,
+			);
+			path = "My-我的";
+			sourceTree = "<group>";
+		};
+		7EFBBB381EDE539E004299F9 /* NetWork-网络请求 */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB411EDE6173004299F9 /* Utils.h */,
+				7EFBBB421EDE6173004299F9 /* Utils.m */,
+				7EFBBB3E1EDE6104004299F9 /* RequestManager.h */,
+				7EFBBB3F1EDE6104004299F9 /* RequestManager.m */,
+			);
+			path = "NetWork-网络请求";
+			sourceTree = "<group>";
+		};
+		7EFBBB391EDE539E004299F9 /* Common-公共 */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB631EDE9760004299F9 /* Category */,
+			);
+			name = "Common-公共";
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7EFBBB3A1EDE539E004299F9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB3B1EDE539E004299F9 /* AppDelegate.h */,
+				7EFBBB3C1EDE539E004299F9 /* AppDelegate.m */,
+				7EFBBB441EDE61BC004299F9 /* HDTabBarController.h */,
+				7EFBBB451EDE61BC004299F9 /* HDTabBarController.m */,
+				7EFBBB471EDE61EB004299F9 /* HDNavigationController.h */,
+				7EFBBB481EDE61EB004299F9 /* HDNavigationController.m */,
+				7EFBBB4A1EDE6216004299F9 /* HDBaseViewController.h */,
+				7EFBBB4B1EDE6216004299F9 /* HDBaseViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7EFBBB631EDE9760004299F9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB6A1EDE97B1004299F9 /* HDCategoryHeader.h */,
+				7EFBBB711EDE9E4A004299F9 /* UIView+Common.h */,
+				7EFBBB721EDE9E4A004299F9 /* UIView+Common.m */,
+				7EFBBB6E1EDE9881004299F9 /* UIColor+YHAddition.h */,
+				7EFBBB6F1EDE9881004299F9 /* UIColor+YHAddition.m */,
+				7EFBBB641EDE976C004299F9 /* NSArray+YHLog.h */,
+				7EFBBB651EDE976C004299F9 /* NSArray+YHLog.m */,
+				7EFBBB671EDE977C004299F9 /* NSObject+YHRunTime.h */,
+				7EFBBB681EDE977C004299F9 /* NSObject+YHRunTime.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9CBA5C1B4F814BF85FC857B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D5C946C9F5F6058B1C52B4F /* Pods-HaiDeHui.debug.xcconfig */,
+				23D17D2F0178DD92B02C5DF6 /* Pods-HaiDeHui.release.xcconfig */,
+				EB8D38566C9B915D4583E811 /* Pods-HaiDeHuiTests.debug.xcconfig */,
+				8FB31164CAC883E98C5F870C /* Pods-HaiDeHuiTests.release.xcconfig */,
+				8760119C8E00F6EBD24BCE48 /* Pods-HaiDeHuiUITests.debug.xcconfig */,
+				8FA9FC0AF6AB3A48CE6D41F6 /* Pods-HaiDeHuiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EFBBAFB1EDE5069004299F9 /* HaiDeHui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EFBBB291EDE5069004299F9 /* Build configuration list for PBXNativeTarget "HaiDeHui" */;
+			buildPhases = (
+				C037A9AF22D01D49D17625F8 /* [CP] Check Pods Manifest.lock */,
+				7EFBBAF81EDE5069004299F9 /* Sources */,
+				7EFBBAF91EDE5069004299F9 /* Frameworks */,
+				7EFBBAFA1EDE5069004299F9 /* Resources */,
+				A98C728255D4B71FC1F1CFCD /* [CP] Embed Pods Frameworks */,
+				9B06E45A8EB961AAB9D25766 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HaiDeHui;
+			productName = HaiDeHui;
+			productReference = 7EFBBAFC1EDE5069004299F9 /* HaiDeHui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EFBBB141EDE5069004299F9 /* HaiDeHuiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EFBBB2C1EDE5069004299F9 /* Build configuration list for PBXNativeTarget "HaiDeHuiTests" */;
+			buildPhases = (
+				9E6077DC669490E6EAB6161D /* [CP] Check Pods Manifest.lock */,
+				7EFBBB111EDE5069004299F9 /* Sources */,
+				7EFBBB121EDE5069004299F9 /* Frameworks */,
+				7EFBBB131EDE5069004299F9 /* Resources */,
+				4B69B4F5D9E7A7ADFB0301F6 /* [CP] Embed Pods Frameworks */,
+				1F179F0560494768FAA2CDA2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EFBBB171EDE5069004299F9 /* PBXTargetDependency */,
+			);
+			name = HaiDeHuiTests;
+			productName = HaiDeHuiTests;
+			productReference = 7EFBBB151EDE5069004299F9 /* HaiDeHuiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7EFBBB1F1EDE5069004299F9 /* HaiDeHuiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EFBBB2F1EDE5069004299F9 /* Build configuration list for PBXNativeTarget "HaiDeHuiUITests" */;
+			buildPhases = (
+				4AFCB890FE1C548FFA742C74 /* [CP] Check Pods Manifest.lock */,
+				7EFBBB1C1EDE5069004299F9 /* Sources */,
+				7EFBBB1D1EDE5069004299F9 /* Frameworks */,
+				7EFBBB1E1EDE5069004299F9 /* Resources */,
+				48008E8A6685031858483CBE /* [CP] Embed Pods Frameworks */,
+				D183B49B6F459E5401AA226E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EFBBB221EDE5069004299F9 /* PBXTargetDependency */,
+			);
+			name = HaiDeHuiUITests;
+			productName = HaiDeHuiUITests;
+			productReference = 7EFBBB201EDE5069004299F9 /* HaiDeHuiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EFBBAF41EDE5069004299F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = junde;
+				TargetAttributes = {
+					7EFBBAFB1EDE5069004299F9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					7EFBBB141EDE5069004299F9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7EFBBAFB1EDE5069004299F9;
+					};
+					7EFBBB1F1EDE5069004299F9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7EFBBAFB1EDE5069004299F9;
+					};
+				};
+			};
+			buildConfigurationList = 7EFBBAF71EDE5069004299F9 /* Build configuration list for PBXProject "HaiDeHui" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EFBBAF31EDE5069004299F9;
+			productRefGroup = 7EFBBAFD1EDE5069004299F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EFBBAFB1EDE5069004299F9 /* HaiDeHui */,
+				7EFBBB141EDE5069004299F9 /* HaiDeHuiTests */,
+				7EFBBB1F1EDE5069004299F9 /* HaiDeHuiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EFBBAFA1EDE5069004299F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFBBB0F1EDE5069004299F9 /* LaunchScreen.storyboard in Resources */,
+				7EFBBB0C1EDE5069004299F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFBBB131EDE5069004299F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFBBB1E1EDE5069004299F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F179F0560494768FAA2CDA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaiDeHuiTests/Pods-HaiDeHuiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48008E8A6685031858483CBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaiDeHuiUITests/Pods-HaiDeHuiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AFCB890FE1C548FFA742C74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B69B4F5D9E7A7ADFB0301F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaiDeHuiTests/Pods-HaiDeHuiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B06E45A8EB961AAB9D25766 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaiDeHui/Pods-HaiDeHui-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E6077DC669490E6EAB6161D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A98C728255D4B71FC1F1CFCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaiDeHui/Pods-HaiDeHui-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C037A9AF22D01D49D17625F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D183B49B6F459E5401AA226E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaiDeHuiUITests/Pods-HaiDeHuiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EFBBAF81EDE5069004299F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFBBB4F1EDE62FB004299F9 /* LoginViewController.m in Sources */,
+				7EFBBB621EDE73C7004299F9 /* TestViewController.m in Sources */,
+				7EFBBB401EDE6104004299F9 /* RequestManager.m in Sources */,
+				7EFBBB491EDE61EB004299F9 /* HDNavigationController.m in Sources */,
+				7EFBBB701EDE9881004299F9 /* UIColor+YHAddition.m in Sources */,
+				7EFBBB461EDE61BC004299F9 /* HDTabBarController.m in Sources */,
+				7EFBBB4C1EDE6216004299F9 /* HDBaseViewController.m in Sources */,
+				7EFBBB521EDE6308004299F9 /* HomeViewController.m in Sources */,
+				7EFBBB5E1EDE63BE004299F9 /* MyViewController.m in Sources */,
+				7EFBBB691EDE977C004299F9 /* NSObject+YHRunTime.m in Sources */,
+				7EFBBB3D1EDE539E004299F9 /* AppDelegate.m in Sources */,
+				7EFBBB581EDE637B004299F9 /* DiscoverViewController.m in Sources */,
+				7EFBBB661EDE976C004299F9 /* NSArray+YHLog.m in Sources */,
+				7EFBBB011EDE5069004299F9 /* main.m in Sources */,
+				7EFBBB731EDE9E4A004299F9 /* UIView+Common.m in Sources */,
+				7EFBBB551EDE6367004299F9 /* HouseSourceViewController.m in Sources */,
+				7EFBBB431EDE6173004299F9 /* Utils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFBBB111EDE5069004299F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFBBB1A1EDE5069004299F9 /* HaiDeHuiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFBBB1C1EDE5069004299F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFBBB251EDE5069004299F9 /* HaiDeHuiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EFBBB171EDE5069004299F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EFBBAFB1EDE5069004299F9 /* HaiDeHui */;
+			targetProxy = 7EFBBB161EDE5069004299F9 /* PBXContainerItemProxy */;
+		};
+		7EFBBB221EDE5069004299F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EFBBAFB1EDE5069004299F9 /* HaiDeHui */;
+			targetProxy = 7EFBBB211EDE5069004299F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7EFBBB0D1EDE5069004299F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EFBBB0E1EDE5069004299F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EFBBB271EDE5069004299F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7EFBBB281EDE5069004299F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EFBBB2A1EDE5069004299F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D5C946C9F5F6058B1C52B4F /* Pods-HaiDeHui.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = HaiDeHui/PrefixHeader.pch;
+				INFOPLIST_FILE = HaiDeHui/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.junde.HaiDeHui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7EFBBB2B1EDE5069004299F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D17D2F0178DD92B02C5DF6 /* Pods-HaiDeHui.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = HaiDeHui/PrefixHeader.pch;
+				INFOPLIST_FILE = HaiDeHui/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.junde.HaiDeHui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7EFBBB2D1EDE5069004299F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8D38566C9B915D4583E811 /* Pods-HaiDeHuiTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HaiDeHuiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.junde.HaiDeHuiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaiDeHui.app/HaiDeHui";
+			};
+			name = Debug;
+		};
+		7EFBBB2E1EDE5069004299F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB31164CAC883E98C5F870C /* Pods-HaiDeHuiTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HaiDeHuiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.junde.HaiDeHuiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaiDeHui.app/HaiDeHui";
+			};
+			name = Release;
+		};
+		7EFBBB301EDE5069004299F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8760119C8E00F6EBD24BCE48 /* Pods-HaiDeHuiUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HaiDeHuiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.junde.HaiDeHuiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HaiDeHui;
+			};
+			name = Debug;
+		};
+		7EFBBB311EDE5069004299F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA9FC0AF6AB3A48CE6D41F6 /* Pods-HaiDeHuiUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HaiDeHuiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.junde.HaiDeHuiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HaiDeHui;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EFBBAF71EDE5069004299F9 /* Build configuration list for PBXProject "HaiDeHui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFBBB271EDE5069004299F9 /* Debug */,
+				7EFBBB281EDE5069004299F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EFBBB291EDE5069004299F9 /* Build configuration list for PBXNativeTarget "HaiDeHui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFBBB2A1EDE5069004299F9 /* Debug */,
+				7EFBBB2B1EDE5069004299F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7EFBBB2C1EDE5069004299F9 /* Build configuration list for PBXNativeTarget "HaiDeHuiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFBBB2D1EDE5069004299F9 /* Debug */,
+				7EFBBB2E1EDE5069004299F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7EFBBB2F1EDE5069004299F9 /* Build configuration list for PBXNativeTarget "HaiDeHuiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFBBB301EDE5069004299F9 /* Debug */,
+				7EFBBB311EDE5069004299F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EFBBAF41EDE5069004299F9 /* Project object */;
+}
