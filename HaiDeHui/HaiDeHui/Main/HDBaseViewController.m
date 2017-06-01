@@ -20,6 +20,12 @@
     [self setupNavgation];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.view bringSubviewToFront:self.navigationBar];
+}
+
 #pragma mark - 设置自定义导航栏
 - (void)setupNavgation {
     self.view.backgroundColor = [UIColor whiteColor];
@@ -39,6 +45,7 @@
     [navgationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
     _navItem = navigationItem;
+    _navigationBar = navgationBar;
 }
 
 #pragma mark - leftItem点击返回

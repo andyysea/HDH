@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3823BEDF33FF8B058A369140 /* libPods-HaiDeHuiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C7301CC308B01444B7257F /* libPods-HaiDeHuiTests.a */; };
+		7E4323EA1EDFC31200D9E9F5 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4323E91EDFC31200D9E9F5 /* HomeTableViewCell.m */; };
+		7E4323EE1EDFE5F300D9E9F5 /* HotHouseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4323ED1EDFE5F300D9E9F5 /* HotHouseListViewController.m */; };
+		7E4323F21EDFE68A00D9E9F5 /* HotHouseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4323F11EDFE68A00D9E9F5 /* HotHouseDetailViewController.m */; };
+		7E4323F51EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4323F41EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.m */; };
 		7EFBBB011EDE5069004299F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB001EDE5069004299F9 /* main.m */; };
 		7EFBBB0C1EDE5069004299F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFBBB0B1EDE5069004299F9 /* Assets.xcassets */; };
 		7EFBBB0F1EDE5069004299F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFBBB0D1EDE5069004299F9 /* LaunchScreen.storyboard */; };
@@ -24,7 +28,6 @@
 		7EFBBB551EDE6367004299F9 /* HouseSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB541EDE6367004299F9 /* HouseSourceViewController.m */; };
 		7EFBBB581EDE637B004299F9 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB571EDE637B004299F9 /* DiscoverViewController.m */; };
 		7EFBBB5E1EDE63BE004299F9 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB5D1EDE63BE004299F9 /* MyViewController.m */; };
-		7EFBBB621EDE73C7004299F9 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB611EDE73C7004299F9 /* TestViewController.m */; };
 		7EFBBB661EDE976C004299F9 /* NSArray+YHLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB651EDE976C004299F9 /* NSArray+YHLog.m */; };
 		7EFBBB691EDE977C004299F9 /* NSObject+YHRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB681EDE977C004299F9 /* NSObject+YHRunTime.m */; };
 		7EFBBB701EDE9881004299F9 /* UIColor+YHAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB6F1EDE9881004299F9 /* UIColor+YHAddition.m */; };
@@ -54,6 +57,14 @@
 /* Begin PBXFileReference section */
 		16F4C2C6C7BA42FDB3CE0037 /* libPods-HaiDeHuiUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaiDeHuiUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D17D2F0178DD92B02C5DF6 /* Pods-HaiDeHui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHui.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHui/Pods-HaiDeHui.release.xcconfig"; sourceTree = "<group>"; };
+		7E4323E81EDFC31200D9E9F5 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		7E4323E91EDFC31200D9E9F5 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		7E4323EC1EDFE5F300D9E9F5 /* HotHouseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotHouseListViewController.h; sourceTree = "<group>"; };
+		7E4323ED1EDFE5F300D9E9F5 /* HotHouseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotHouseListViewController.m; sourceTree = "<group>"; };
+		7E4323F01EDFE68A00D9E9F5 /* HotHouseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotHouseDetailViewController.h; sourceTree = "<group>"; };
+		7E4323F11EDFE68A00D9E9F5 /* HotHouseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotHouseDetailViewController.m; sourceTree = "<group>"; };
+		7E4323F31EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotHouseListTableViewCell.h; sourceTree = "<group>"; };
+		7E4323F41EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotHouseListTableViewCell.m; sourceTree = "<group>"; };
 		7EFBBAFC1EDE5069004299F9 /* HaiDeHui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaiDeHui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFBBB001EDE5069004299F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EFBBB0B1EDE5069004299F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,8 +99,6 @@
 		7EFBBB5C1EDE63BE004299F9 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		7EFBBB5D1EDE63BE004299F9 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		7EFBBB5F1EDE6EC4004299F9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		7EFBBB601EDE73C7004299F9 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		7EFBBB611EDE73C7004299F9 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		7EFBBB641EDE976C004299F9 /* NSArray+YHLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YHLog.h"; sourceTree = "<group>"; };
 		7EFBBB651EDE976C004299F9 /* NSArray+YHLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YHLog.m"; sourceTree = "<group>"; };
 		7EFBBB671EDE977C004299F9 /* NSObject+YHRunTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YHRunTime.h"; sourceTree = "<group>"; };
@@ -146,6 +155,30 @@
 				16F4C2C6C7BA42FDB3CE0037 /* libPods-HaiDeHuiUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E4323EB1EDFE58400D9E9F5 /* Home->首页 */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBBB501EDE6308004299F9 /* HomeViewController.h */,
+				7EFBBB511EDE6308004299F9 /* HomeViewController.m */,
+				7E4323E81EDFC31200D9E9F5 /* HomeTableViewCell.h */,
+				7E4323E91EDFC31200D9E9F5 /* HomeTableViewCell.m */,
+			);
+			name = "Home->首页";
+			sourceTree = "<group>";
+		};
+		7E4323EF1EDFE5FB00D9E9F5 /* 最热房源 */ = {
+			isa = PBXGroup;
+			children = (
+				7E4323EC1EDFE5F300D9E9F5 /* HotHouseListViewController.h */,
+				7E4323ED1EDFE5F300D9E9F5 /* HotHouseListViewController.m */,
+				7E4323F31EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.h */,
+				7E4323F41EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.m */,
+				7E4323F01EDFE68A00D9E9F5 /* HotHouseDetailViewController.h */,
+				7E4323F11EDFE68A00D9E9F5 /* HotHouseDetailViewController.m */,
+			);
+			name = "最热房源";
 			sourceTree = "<group>";
 		};
 		7EFBBAF31EDE5069004299F9 = {
@@ -236,10 +269,8 @@
 		7EFBBB341EDE539E004299F9 /* Home-首页 */ = {
 			isa = PBXGroup;
 			children = (
-				7EFBBB501EDE6308004299F9 /* HomeViewController.h */,
-				7EFBBB511EDE6308004299F9 /* HomeViewController.m */,
-				7EFBBB601EDE73C7004299F9 /* TestViewController.h */,
-				7EFBBB611EDE73C7004299F9 /* TestViewController.m */,
+				7E4323EB1EDFE58400D9E9F5 /* Home->首页 */,
+				7E4323EF1EDFE5FB00D9E9F5 /* 最热房源 */,
 			);
 			path = "Home-首页";
 			sourceTree = "<group>";
@@ -616,19 +647,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4323F51EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.m in Sources */,
+				7E4323EA1EDFC31200D9E9F5 /* HomeTableViewCell.m in Sources */,
 				7EFBBB4F1EDE62FB004299F9 /* LoginViewController.m in Sources */,
-				7EFBBB621EDE73C7004299F9 /* TestViewController.m in Sources */,
 				7EFBBB401EDE6104004299F9 /* RequestManager.m in Sources */,
 				7EFBBB491EDE61EB004299F9 /* HDNavigationController.m in Sources */,
 				EAAEDA671EDF1A4200C46E9D /* NSAttributedString+YHAddition.m in Sources */,
 				7EFBBB701EDE9881004299F9 /* UIColor+YHAddition.m in Sources */,
 				7EFBBB461EDE61BC004299F9 /* HDTabBarController.m in Sources */,
 				7EFBBB4C1EDE6216004299F9 /* HDBaseViewController.m in Sources */,
+				7E4323EE1EDFE5F300D9E9F5 /* HotHouseListViewController.m in Sources */,
 				7EFBBB521EDE6308004299F9 /* HomeViewController.m in Sources */,
 				7EFBBB5E1EDE63BE004299F9 /* MyViewController.m in Sources */,
 				7EFBBB691EDE977C004299F9 /* NSObject+YHRunTime.m in Sources */,
 				7EFBBB3D1EDE539E004299F9 /* AppDelegate.m in Sources */,
 				7EFBBB581EDE637B004299F9 /* DiscoverViewController.m in Sources */,
+				7E4323F21EDFE68A00D9E9F5 /* HotHouseDetailViewController.m in Sources */,
 				7EFBBB661EDE976C004299F9 /* NSArray+YHLog.m in Sources */,
 				7EFBBB011EDE5069004299F9 /* main.m in Sources */,
 				7EFBBB731EDE9E4A004299F9 /* UIView+Common.m in Sources */,
