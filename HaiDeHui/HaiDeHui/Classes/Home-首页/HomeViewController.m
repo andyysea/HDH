@@ -100,7 +100,7 @@ static NSString *cellId = @"cellId";
 - (void)setupUI {
     self.navItem.title = @"首页";
     // 1>添加表格视图
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, Width_Screen, Height_Screen - 64) style:UITableViewStyleGrouped];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, Width_Screen, Height_Screen - 64) style:UITableViewStylePlain];
     tableView.dataSource = self;
     tableView.delegate = self;
     tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
