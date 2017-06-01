@@ -39,6 +39,7 @@
     [navgationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
     _navItem = navigationItem;
+    _navigationBar = navgationBar;
 }
 
 #pragma mark - leftItem点击返回
