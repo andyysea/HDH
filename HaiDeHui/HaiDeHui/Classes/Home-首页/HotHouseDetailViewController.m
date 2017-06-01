@@ -24,6 +24,14 @@
 /** 当期图片以及总的图片数量 */
 @property (nonatomic, weak) UILabel *pictureCountLabel;
 
+
+
+/**
+ 测试数组
+ */
+@property (nonatomic, strong) NSArray *imageArray;
+
+
 @end
 
 @implementation HotHouseDetailViewController
@@ -32,6 +40,40 @@
     [super viewDidLoad];
     
     [self setupUI];
+    [self loadData];
+}
+
+#pragma mark - 点按手势,用于弹出图片浏览器
+- (void)tapGestureClick {
+    NSLog(@"要弹出图片浏览器,并且获取当前的第几张图片");
+}
+
+#pragma mark - 加载数据
+- (void)loadData {
+    _imageArray =  @[
+                     @"http://ww2.sinaimg.cn/thumbnail/9ecab84ejw1emgd5nd6eaj20c80c8q4a.jpg",
+                                          @"http://ww2.sinaimg.cn/thumbnail/642beb18gw1ep3629gfm0g206o050b2a.gif",
+                     @"http://ww4.sinaimg.cn/thumbnail/9e9cb0c9jw1ep7nlyu8waj20c80kptae.jpg",
+                     @"http://ww3.sinaimg.cn/thumbnail/8e88b0c1gw1e9lpr1xydcj20gy0o9q6s.jpg",
+                     @"http://ww2.sinaimg.cn/thumbnail/8e88b0c1gw1e9lpr2n1jjj20gy0o9tcc.jpg",
+                     @"http://ww4.sinaimg.cn/thumbnail/8e88b0c1gw1e9lpr4nndfj20gy0o9q6i.jpg",
+                     @"http://ww3.sinaimg.cn/thumbnail/8e88b0c1gw1e9lpr57tn9j20gy0obn0f.jpg",
+                     @"http://ww2.sinaimg.cn/thumbnail/677febf5gw1erma104rhyj20k03dz16y.jpg",
+                     @"http://ww4.sinaimg.cn/thumbnail/677febf5gw1erma1g5xd0j20k0esa7wj.jpg"
+                     ];
+    // 请求完毕数据之后,设置图片
+    NSInteger index = 0;
+    for (NSString *urlStr in _imageArray) {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(index * Width_Screen, 0, Width_Screen, ImageHeight)];
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.clipsToBounds = YES;
+        [imageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@"hehe"]];
+        imageView.tag = index;
+        index++;
+        [self.imageScrollView addSubview:imageView];
+    }
+    self.imageScrollView.contentSize = CGSizeMake(_imageArray.count * Width_Screen, ImageHeight);
+    self.wrapperScrollView.contentSize = CGSizeMake(_imageArray.count * Width_Screen, ImageHeight);
 }
 
 #pragma mark - 设置界面元素
@@ -60,13 +102,17 @@
     wrapperScrollView.delegate = self;
     wrapperScrollView.pagingEnabled = YES;
     wrapperScrollView.showsVerticalScrollIndicator = NO;
-    wrapperScrollView.showsVerticalScrollIndicator = YES;
+    wrapperScrollView.showsVerticalScrollIndicator = NO;
     [bgScrollView addSubview:wrapperScrollView];
+    
+    // 添加一个点按手势,用于控制点击上面图片部分弹出图片浏览器
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureClick)];
+    [wrapperScrollView addGestureRecognizer:tapGesture];
     
     // b> 添加显示小区名 好 图片当前页数和总页数的视图
     UIView *oneBgView = [[UIView alloc] initWithFrame:CGRectMake(0, ImageHeight - 40, Width_Screen, 40)];
     oneBgView.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.3];
-    [wrapperScrollView addSubview:oneBgView];
+    [bgScrollView addSubview:oneBgView];
     // 公寓名标签
     UILabel *apartmentNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, Width_Screen - 80 , 40)];
     apartmentNameLabel.font = [UIFont systemFontOfSize:20];
@@ -81,6 +127,12 @@
     pictureCountLabel.text = @"1 / 5";
     [oneBgView addSubview:pictureCountLabel];
     
+    // 属性记录
+    _imageScrollView = imageScrollView;
+    _bgScrollView = bgScrollView;
+    _wrapperScrollView = wrapperScrollView;
+    _apartmentNameLabel = apartmentNameLabel;
+    _pictureCountLabel = pictureCountLabel;
 }
 
 
