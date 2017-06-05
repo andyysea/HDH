@@ -157,6 +157,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7E3BE57E1EE4E98C006206B5 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
 		7E4323EB1EDFE58400D9E9F5 /* Home->首页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +323,7 @@
 		7EFBBB391EDE539E004299F9 /* Common-公共 */ = {
 			isa = PBXGroup;
 			children = (
+				7E3BE57E1EE4E98C006206B5 /* PhotoBrowser */,
 				7EFBBB631EDE9760004299F9 /* Category */,
 			);
 			name = "Common-公共";

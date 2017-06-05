@@ -9,7 +9,7 @@
 #import "HotHouseDetailViewController.h"
 
 /** 屏幕上方图片的高度 */
-#define ImageHeight  Width_Screen * 9 / 16
+#define ImageHeight  (Width_Screen * 9 / 16)
 /** 图片滚动视图上面添加的图片的tag基准 */
 #define MyImageViewTag  10010
 
@@ -26,9 +26,11 @@
 @property (nonatomic, weak) UIView *oneBgView;
 /** 显示的公寓名称 */
 @property (nonatomic, weak) UILabel *apartmentNameLabel;
-/** 当期图片以及总的图片数量 */
+/** 用于显示当期图片/总的图片数量 */
 @property (nonatomic, weak) UILabel *currentPicNumberLabel;
 
+/** 当期显示的第几张图片 */
+@property (nonatomic, assign) NSInteger currentPage;
 
 
 /**
@@ -56,7 +58,9 @@
 
 #pragma mark - 点按手势,用于弹出图片浏览器
 - (void)tapGestureClick:(UITapGestureRecognizer *)tapGesture {
-    NSLog(@"要弹出图片浏览器,并且获取当前的第几张图片");
+    NSLog(@"--> %zd",_currentPage);
+    // 显示当前的页数正常之后,点击弹出图片浏览器
+    
 }
 
 
@@ -93,6 +97,9 @@
     }
     
     
+    // 属性记录
+    _currentPage = currentPage + 1;
+    self.currentPicNumberLabel.text = [NSString stringWithFormat:@"%zd / %zd", _currentPage, self.imageArray.count];
 }
 
 #pragma mark - 加载数据
@@ -121,6 +128,13 @@
     }
     self.imageScrollView.contentSize = CGSizeMake(_imageArray.count * Width_Screen, ImageHeight);
     self.wrapperScrollView.contentSize = CGSizeMake(_imageArray.count * Width_Screen, ImageHeight);
+    
+    // 设置小区名字和页数
+    // 当前页面默认初始化是1
+    if (_currentPage == 0) {
+        _currentPage = 1;
+    }
+    self.currentPicNumberLabel.text = [NSString stringWithFormat:@"%zd / %zd", _currentPage, self.imageArray.count];
 }
 
 #pragma mark - 设置界面元素
@@ -182,7 +196,6 @@
     UIView *testView = [[UIView alloc] initWithFrame:CGRectMake(0, ImageHeight, Width_Screen, Height_Screen - 100)];
     testView.backgroundColor = [UIColor orangeColor];
     [bgScrollView addSubview:testView];
-    
     
     // 属性记录
     _imageScrollView = imageScrollView;
