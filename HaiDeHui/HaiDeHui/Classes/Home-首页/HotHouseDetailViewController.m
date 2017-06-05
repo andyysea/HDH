@@ -52,14 +52,11 @@
 
 
 
-
-
-
-
 #pragma mark - 点按手势,用于弹出图片浏览器
 - (void)tapGestureClick:(UITapGestureRecognizer *)tapGesture {
     NSLog(@"--> %zd",_currentPage);
-    // 显示当前的页数正常之后,点击弹出图片浏览器
+    // 显示当前的页数正常之后,点击弹出图片浏览器 self.currentPage 从0开始
+    
     
 }
 
@@ -95,11 +92,11 @@
         self.imageScrollView.frame = CGRectMake(0, - offsetY / 3 + 64, Width_Screen, Height_Screen);
         self.oneBgView.frame = CGRectMake(0, - offsetY / 3 + ImageHeight + 64 - 40, Width_Screen, 40);
     }
-    
+
+    self.currentPicNumberLabel.text = [NSString stringWithFormat:@"%zd / %zd", currentPage + 1, self.imageArray.count];
     
     // 属性记录
-    _currentPage = currentPage + 1;
-    self.currentPicNumberLabel.text = [NSString stringWithFormat:@"%zd / %zd", _currentPage, self.imageArray.count];
+    _currentPage = currentPage;
 }
 
 #pragma mark - 加载数据
@@ -131,10 +128,7 @@
     
     // 设置小区名字和页数
     // 当前页面默认初始化是1
-    if (_currentPage == 0) {
-        _currentPage = 1;
-    }
-    self.currentPicNumberLabel.text = [NSString stringWithFormat:@"%zd / %zd", _currentPage, self.imageArray.count];
+    self.currentPicNumberLabel.text = [NSString stringWithFormat:@"1 / %zd", self.imageArray.count];
 }
 
 #pragma mark - 设置界面元素
@@ -183,7 +177,7 @@
     wrapperScrollView.delegate = self;
     wrapperScrollView.pagingEnabled = YES;
     wrapperScrollView.showsVerticalScrollIndicator = NO;
-    wrapperScrollView.showsVerticalScrollIndicator = NO;
+    wrapperScrollView.showsHorizontalScrollIndicator = NO;
     [bgScrollView addSubview:wrapperScrollView];
     
     // 添加一个点按手势,用于控制点击上面图片部分弹出图片浏览器
