@@ -12,6 +12,7 @@
 		7E4323EE1EDFE5F300D9E9F5 /* HotHouseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4323ED1EDFE5F300D9E9F5 /* HotHouseListViewController.m */; };
 		7E4323F21EDFE68A00D9E9F5 /* HotHouseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4323F11EDFE68A00D9E9F5 /* HotHouseDetailViewController.m */; };
 		7E4323F51EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4323F41EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.m */; };
+		7EF6339C1EE807D500332C8E /* bowser_x_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EF6339B1EE807D500332C8E /* bowser_x_icon@2x.png */; };
 		7EFBBB011EDE5069004299F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB001EDE5069004299F9 /* main.m */; };
 		7EFBBB0C1EDE5069004299F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFBBB0B1EDE5069004299F9 /* Assets.xcassets */; };
 		7EFBBB0F1EDE5069004299F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFBBB0D1EDE5069004299F9 /* LaunchScreen.storyboard */; };
@@ -69,6 +70,7 @@
 		7E4323F11EDFE68A00D9E9F5 /* HotHouseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotHouseDetailViewController.m; sourceTree = "<group>"; };
 		7E4323F31EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotHouseListTableViewCell.h; sourceTree = "<group>"; };
 		7E4323F41EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotHouseListTableViewCell.m; sourceTree = "<group>"; };
+		7EF6339B1EE807D500332C8E /* bowser_x_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bowser_x_icon@2x.png"; sourceTree = "<group>"; };
 		7EFBBAFC1EDE5069004299F9 /* HaiDeHui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaiDeHui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFBBB001EDE5069004299F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EFBBB0B1EDE5069004299F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				7EFE40861EE678C80060625A /* HDPhotoBrowserLoadingView.h */,
 				7EFE40871EE678C80060625A /* HDPhotoBrowserLoadingView.m */,
 				EA3DC4551EE6F733001FEA43 /* placeholderImage.png */,
+				7EF6339B1EE807D500332C8E /* bowser_x_icon@2x.png */,
 			);
 			path = PhotoBrowser;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 			files = (
 				EA3DC4561EE6F733001FEA43 /* placeholderImage.png in Resources */,
 				7EFBBB0F1EDE5069004299F9 /* LaunchScreen.storyboard in Resources */,
+				7EF6339C1EE807D500332C8E /* bowser_x_icon@2x.png in Resources */,
 				7EFBBB0C1EDE5069004299F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
