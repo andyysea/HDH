@@ -26,14 +26,14 @@ NS_ASSUME_NONNULL_BEGIN
  Sample Code:
     
      ********************** json convertor *********************
-     @interface YYAuthor : NSObject
+ 
      @property (nonatomic, strong) NSString *name;
      @property (nonatomic, assign) NSDate *birthday;
      @end
      @implementation YYAuthor
      @end
  
-     @interface YYBook : NSObject
+ 
      @property (nonatomic, copy) NSString *name;
      @property (nonatomic, assign) NSUInteger pages;
      @property (nonatomic, strong) YYAuthor *author;
@@ -51,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
      }
  
      ********************** Coding/Copying/hash/equal *********************
-     @interface YYShadow :NSObject <NSCoding, NSCopying>
+ 
      @property (nonatomic, copy) NSString *name;
      @property (nonatomic, assign) CGSize size;
      @end
@@ -282,7 +282,7 @@ NS_ASSUME_NONNULL_BEGIN
         }
  
     model:
-        @interface YYBook : NSObject
+ 
         @property NSString *name;
         @property NSInteger page;
         @property NSString *desc;
@@ -310,9 +310,9 @@ NS_ASSUME_NONNULL_BEGIN
  object will be add to the array/set/dictionary.
  
   Example:
-        @class YYShadow, YYBorder, YYAttachment;
  
-        @interface YYAttributes
+ 
+        
         @property NSString *name;
         @property NSArray *shadows;
         @property NSSet *borders;
@@ -340,7 +340,7 @@ NS_ASSUME_NONNULL_BEGIN
  (both singular and containers via `+modelContainerPropertyGenericClass`).
  
  Example:
-        @class YYCircle, YYRectangle, YYLine;
+        
  
         @implementation YYShape
 

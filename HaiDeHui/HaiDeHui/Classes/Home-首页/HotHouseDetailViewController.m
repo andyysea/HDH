@@ -7,13 +7,14 @@
 //
 
 #import "HotHouseDetailViewController.h"
+#import "HDPhotoBrowserView.h"
 
 /** 屏幕上方图片的高度 */
 #define ImageHeight  (Width_Screen * 9 / 16)
 /** 图片滚动视图上面添加的图片的tag基准 */
 #define MyImageViewTag  10010
 
-@interface HotHouseDetailViewController ()<UIScrollViewDelegate>
+@interface HotHouseDetailViewController ()<UIScrollViewDelegate, HDPhotoBrowserViewDelegate>
 
 /** 底层添加滚动图片的滚动视图 */
 @property (nonatomic, weak) UIScrollView *imageScrollView;
@@ -37,6 +38,10 @@
  测试数组
  */
 @property (nonatomic, strong) NSArray *imageArray;
+/** 
+ 测试高清图数组
+ */
+@property (nonatomic, strong) NSArray *highImageArray;
 
 
 @end
@@ -52,12 +57,32 @@
 
 
 
+#pragma mark - HDPhotoBrowserViewDelegate
+- (void)photoBrowserView:(HDPhotoBrowserView *)photoBrowser currentIndex:(NSInteger)index {
+    
+    NSLog(@" index --> %zd", index);
+    self.currentPage = index;
+    self.imageScrollView.contentOffset = CGPointMake(index * Width_Screen, 0);
+    self.wrapperScrollView.contentOffset = CGPointMake(index *Width_Screen, 0);
+ 
+    self.currentPicNumberLabel.text = [NSString stringWithFormat:@"%zd / %zd", self.currentPage + 1, self.imageArray.count];
+}
+
+
 #pragma mark - 点按手势,用于弹出图片浏览器
 - (void)tapGestureClick:(UITapGestureRecognizer *)tapGesture {
     NSLog(@"--> %zd",_currentPage);
     // 显示当前的页数正常之后,点击弹出图片浏览器 self.currentPage 从0开始
     
+    // ****** 先使用低质量的图片数组--> 后续可以改
+    UIImage *plceholderImage = [(UIImageView *)self.imageScrollView.subviews[self.currentPage] image];
+    if (!plceholderImage) {
+        return;
+    }
     
+    HDPhotoBrowserView *browserView = [[HDPhotoBrowserView alloc] initWithCurrentIndex:self.currentPage imageURLArray:self.highImageArray placeholderImage:nil sourceView:nil];
+    browserView.delegate = self;
+    [browserView show];
 }
 
 
@@ -112,11 +137,23 @@
                      @"http://ww2.sinaimg.cn/thumbnail/677febf5gw1erma104rhyj20k03dz16y.jpg",
                      @"http://ww4.sinaimg.cn/thumbnail/677febf5gw1erma1g5xd0j20k0esa7wj.jpg"
                      ];
+    _highImageArray = @[
+                        @"http://ww2.sinaimg.cn/bmiddle/9ecab84ejw1emgd5nd6eaj20c80c8q4a.jpg",
+                        @"http://ww2.sinaimg.cn/bmiddle/642beb18gw1ep3629gfm0g206o050b2a.gif",
+                        @"http://ww4.sinaimg.cn/bmiddle/9e9cb0c9jw1ep7nlyu8waj20c80kptae.jpg",
+                        @"http://ww3.sinaimg.cn/bmiddle/8e88b0c1gw1e9lpr1xydcj20gy0o9q6s.jpg",
+                        @"http://ww2.sinaimg.cn/bmiddle/8e88b0c1gw1e9lpr2n1jjj20gy0o9tcc.jpg",
+                        @"http://ww4.sinaimg.cn/bmiddle/8e88b0c1gw1e9lpr4nndfj20gy0o9q6i.jpg",
+                        @"http://ww3.sinaimg.cn/bmiddle/8e88b0c1gw1e9lpr57tn9j20gy0obn0f.jpg",
+                        @"http://ww2.sinaimg.cn/bmiddle/677febf5gw1erma104rhyj20k03dz16y.jpg",
+                        @"http://ww4.sinaimg.cn/bmiddle/677febf5gw1erma1g5xd0j20k0esa7wj.jpg"
+                                             ];
+    
     // 请求完毕数据之后,设置图片
     NSInteger index = 0;
     for (NSString *urlStr in _imageArray) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(index * Width_Screen, 0, Width_Screen, ImageHeight)];
-        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
         imageView.clipsToBounds = YES;
         [imageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@"hehe"]];
         imageView.tag = index + MyImageViewTag;

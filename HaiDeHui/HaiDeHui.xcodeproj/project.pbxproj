@@ -32,7 +32,11 @@
 		7EFBBB691EDE977C004299F9 /* NSObject+YHRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB681EDE977C004299F9 /* NSObject+YHRunTime.m */; };
 		7EFBBB701EDE9881004299F9 /* UIColor+YHAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB6F1EDE9881004299F9 /* UIColor+YHAddition.m */; };
 		7EFBBB731EDE9E4A004299F9 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBBB721EDE9E4A004299F9 /* UIView+Common.m */; };
+		7EFE407F1EE63EF60060625A /* HDPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE407E1EE63EF60060625A /* HDPhotoBrowserView.m */; };
+		7EFE40851EE650860060625A /* HDPhotoBrowserContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE40841EE650860060625A /* HDPhotoBrowserContentView.m */; };
+		7EFE40881EE678C80060625A /* HDPhotoBrowserLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE40871EE678C80060625A /* HDPhotoBrowserLoadingView.m */; };
 		91D1D8EC7C2AD7CB29657393 /* libPods-HaiDeHui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEA0BEDDE5C9A970B099DC /* libPods-HaiDeHui.a */; };
+		EA3DC4561EE6F733001FEA43 /* placeholderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3DC4551EE6F733001FEA43 /* placeholderImage.png */; };
 		EAAEDA671EDF1A4200C46E9D /* NSAttributedString+YHAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAEDA661EDF1A4200C46E9D /* NSAttributedString+YHAddition.m */; };
 		ED46D8B84C94BDF7CD4790D8 /* libPods-HaiDeHuiUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F4C2C6C7BA42FDB3CE0037 /* libPods-HaiDeHuiUITests.a */; };
 /* End PBXBuildFile section */
@@ -108,12 +112,19 @@
 		7EFBBB6F1EDE9881004299F9 /* UIColor+YHAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YHAddition.m"; sourceTree = "<group>"; };
 		7EFBBB711EDE9E4A004299F9 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
 		7EFBBB721EDE9E4A004299F9 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		7EFE407D1EE63EF60060625A /* HDPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPhotoBrowserView.h; sourceTree = "<group>"; };
+		7EFE407E1EE63EF60060625A /* HDPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDPhotoBrowserView.m; sourceTree = "<group>"; };
+		7EFE40831EE650860060625A /* HDPhotoBrowserContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPhotoBrowserContentView.h; sourceTree = "<group>"; };
+		7EFE40841EE650860060625A /* HDPhotoBrowserContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDPhotoBrowserContentView.m; sourceTree = "<group>"; };
+		7EFE40861EE678C80060625A /* HDPhotoBrowserLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPhotoBrowserLoadingView.h; sourceTree = "<group>"; };
+		7EFE40871EE678C80060625A /* HDPhotoBrowserLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDPhotoBrowserLoadingView.m; sourceTree = "<group>"; };
 		8760119C8E00F6EBD24BCE48 /* Pods-HaiDeHuiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHuiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHuiUITests/Pods-HaiDeHuiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D5C946C9F5F6058B1C52B4F /* Pods-HaiDeHui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHui/Pods-HaiDeHui.debug.xcconfig"; sourceTree = "<group>"; };
 		8FA9FC0AF6AB3A48CE6D41F6 /* Pods-HaiDeHuiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHuiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHuiUITests/Pods-HaiDeHuiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8FB31164CAC883E98C5F870C /* Pods-HaiDeHuiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHuiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHuiTests/Pods-HaiDeHuiTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CDEA0BEDDE5C9A970B099DC /* libPods-HaiDeHui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaiDeHui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C7301CC308B01444B7257F /* libPods-HaiDeHuiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaiDeHuiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3DC4551EE6F733001FEA43 /* placeholderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderImage.png; sourceTree = "<group>"; };
 		EAAEDA651EDF1A4200C46E9D /* NSAttributedString+YHAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YHAddition.h"; sourceTree = "<group>"; };
 		EAAEDA661EDF1A4200C46E9D /* NSAttributedString+YHAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YHAddition.m"; sourceTree = "<group>"; };
 		EB8D38566C9B915D4583E811 /* Pods-HaiDeHuiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaiDeHuiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaiDeHuiTests/Pods-HaiDeHuiTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +171,13 @@
 		7E3BE57E1EE4E98C006206B5 /* PhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				7EFE407D1EE63EF60060625A /* HDPhotoBrowserView.h */,
+				7EFE407E1EE63EF60060625A /* HDPhotoBrowserView.m */,
+				7EFE40831EE650860060625A /* HDPhotoBrowserContentView.h */,
+				7EFE40841EE650860060625A /* HDPhotoBrowserContentView.m */,
+				7EFE40861EE678C80060625A /* HDPhotoBrowserLoadingView.h */,
+				7EFE40871EE678C80060625A /* HDPhotoBrowserLoadingView.m */,
+				EA3DC4551EE6F733001FEA43 /* placeholderImage.png */,
 			);
 			path = PhotoBrowser;
 			sourceTree = "<group>";
@@ -491,6 +509,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3DC4561EE6F733001FEA43 /* placeholderImage.png in Resources */,
 				7EFBBB0F1EDE5069004299F9 /* LaunchScreen.storyboard in Resources */,
 				7EFBBB0C1EDE5069004299F9 /* Assets.xcassets in Resources */,
 			);
@@ -658,6 +677,7 @@
 				7E4323F51EDFEF1A00D9E9F5 /* HotHouseListTableViewCell.m in Sources */,
 				7E4323EA1EDFC31200D9E9F5 /* HomeTableViewCell.m in Sources */,
 				7EFBBB4F1EDE62FB004299F9 /* LoginViewController.m in Sources */,
+				7EFE40851EE650860060625A /* HDPhotoBrowserContentView.m in Sources */,
 				7EFBBB401EDE6104004299F9 /* RequestManager.m in Sources */,
 				7EFBBB491EDE61EB004299F9 /* HDNavigationController.m in Sources */,
 				EAAEDA671EDF1A4200C46E9D /* NSAttributedString+YHAddition.m in Sources */,
@@ -665,11 +685,13 @@
 				7EFBBB461EDE61BC004299F9 /* HDTabBarController.m in Sources */,
 				7EFBBB4C1EDE6216004299F9 /* HDBaseViewController.m in Sources */,
 				7E4323EE1EDFE5F300D9E9F5 /* HotHouseListViewController.m in Sources */,
+				7EFE407F1EE63EF60060625A /* HDPhotoBrowserView.m in Sources */,
 				7EFBBB521EDE6308004299F9 /* HomeViewController.m in Sources */,
 				7EFBBB5E1EDE63BE004299F9 /* MyViewController.m in Sources */,
 				7EFBBB691EDE977C004299F9 /* NSObject+YHRunTime.m in Sources */,
 				7EFBBB3D1EDE539E004299F9 /* AppDelegate.m in Sources */,
 				7EFBBB581EDE637B004299F9 /* DiscoverViewController.m in Sources */,
+				7EFE40881EE678C80060625A /* HDPhotoBrowserLoadingView.m in Sources */,
 				7E4323F21EDFE68A00D9E9F5 /* HotHouseDetailViewController.m in Sources */,
 				7EFBBB661EDE976C004299F9 /* NSArray+YHLog.m in Sources */,
 				7EFBBB011EDE5069004299F9 /* main.m in Sources */,
